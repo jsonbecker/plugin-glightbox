@@ -1,0 +1,18 @@
+<a href="{{ .Get "src" }}" 
+   class="glightbox"
+   {{ if .Get "gallery"}}
+     data-gallery="{{ .Get "gallery" }}"
+   {{ end }}
+   {{ if or (.Get "title") (.Get "description") }}
+     data-glightbox="title:{{ .Get "title" | default "" }};description:{{ .Get "description" | default "" }}"
+   {{end}}
+>
+<img src= "{{ .Get "thumb" | default (.Get "src") }}"
+        {{ if .Get "alt" }}
+           alt="{{ .Get "alt" }}" 
+        {{ end }}
+        {{ if .Get "title" }}
+           title={{ .Get "title" }} 
+        {{ end }}
+   style="max-width: 100%"/>
+</a>
