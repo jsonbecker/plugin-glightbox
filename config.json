@@ -1,9 +1,0 @@
-{
-  "params": {
-    "plugins_css": [
-      "https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-    ],
-    "plugins_js": [
-      "https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"
-    ]
-  }
