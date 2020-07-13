@@ -5,7 +5,7 @@
   "includes": [
     "/glightbox.js",
     "/img-gallery.css",
-    "cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css",
-    "cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"
+    "https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css",
+    "https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"
   ]
 }
