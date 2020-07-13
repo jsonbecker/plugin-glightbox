@@ -4,6 +4,8 @@
   "description": "Adds the ability to have simple, attractive lightbox and gallery for photos using a shortcode.",
   "includes": [
     "/glightbox.js",
-    "/img-gallery.css"
+    "/img-gallery.css",
+    "cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css",
+    "cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"
   ]
 }
