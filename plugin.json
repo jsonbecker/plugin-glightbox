@@ -1,11 +1,9 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "title": "GLightbox",
   "description": "Adds the ability to have simple, attractive lightbox and gallery for photos using a shortcode.",
   "includes": [
     "/glightbox.js",
-    "/img-gallery.css",
-    "https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css",
-    "https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"
+    "/img-gallery.css"
   ]
 }
