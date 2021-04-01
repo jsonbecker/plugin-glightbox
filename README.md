@@ -26,14 +26,14 @@ Other optional parameters include:
 
 - `title`, which will show up when you click to expand
 - `description`, which will appear below the title (or just below the image if there is no title) upon expansion
-- `thumb`, another image URL which will be used as a thumbnail in the non-expanded version on your page. This is especially helpful if your post will have many images.
-- `gallery`, which is a name you want to give to an image gallery. To have a navigatable image gallery, you must provide the same text to gallery for all the images that are to be grouped together. It's important this name is somewhat unique, because it's quite possible you'll have multiple galleries on the same page on site indexes or archives, and you'll want to make sure you don't use something like `"gallery1"` in all your posts that puts them all in the same gallery on under these conditions.
+- ~`thumb`, another image URL which will be used as a thumbnail in the non-expanded version on your page. This is especially helpful if your post will have many images.~
+- `gallery`, which is a name you want to give to an image gallery. To have a navigatable image gallery, you must provide the same text to gallery for all the images that are to be grouped together. It's important this name is somewhat unique, because it's quite possible you'll have multiple galleries on the same page on site indexes or archives, and you'll want to make sure you don't use something like `"gallery1"` in all your posts that puts them all in the same gallery on under these conditions. When using a gallery, your photos will all be presented as 260px wide thumbnails produced by Micro.blog's API for photo resizing. This will reduce page load times on pages with many images, as galleries may have.
 
 ## Extras
 
 I have included a small snippet of CSS for anything with the class `img-gallery` that will provide a grid-of-images if you surround your `glightbox` entries with a div of that class.
 
-On my own site, you can see an example on [this blog post.](https://micro.json.blog/2020/01/01/the-first-ten.html)
+On my own site, you can see an example on [this blog post.](https://json.blog/2020/01/01/the-first-ten.html)
 
 Here's the code for that first gallery that is in the content of my post:
 

@@ -7,12 +7,16 @@
      data-glightbox="title:{{ .Get "title" | default "" }};description:{{ .Get "description" | default "" }}"
    {{end}}
 >
-<img src= "{{ .Get "thumb" | default (.Get "src") }}"
-        {{ if .Get "alt" }}
-           alt="{{ .Get "alt" }}" 
-        {{ end }}
-        {{ if .Get "title" }}
-           title={{ .Get "title" }} 
-        {{ end }}
-   style="max-width: 100%"/>
+<img {{ if .Get "gallery"}} 
+        src = "https://micro.blog/photos/260x/{{ .Get "src" }}"
+     {{ else }}
+        src = "{{ .Get "src" }}"
+     {{ end }}
+     {{ if .Get "alt" }}
+        alt="{{ .Get "alt" }}" 
+     {{ end }}
+     {{ if .Get "title" }}
+        title={{ .Get "title" }} 
+     {{ end }}
+     style="max-width: 100%"/>
 </a>
