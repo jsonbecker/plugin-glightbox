@@ -8,15 +8,14 @@
    {{end}}
 >
 <img {{ if .Get "gallery"}} 
-        src = "https://micro.blog/photos/360x/{{ .Get "src" }}"
+        src = "https://micro.blog/photos/300x/{{ .Get "src" }}" style="border-radius: 5px; max-width: 100%"
      {{ else }}
-        src = "{{ .Get "src" }}"
+        src = "{{ .Get "src" }}" style="max-width: 100%"
      {{ end }}
      {{ if .Get "alt" }}
         alt="{{ .Get "alt" }}" 
      {{ end }}
      {{ if .Get "title" }}
         title={{ .Get "title" }} 
-     {{ end }}
-     style="max-width: 100%"/>
+     {{ end }} />
 </a>
