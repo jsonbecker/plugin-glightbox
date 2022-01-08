@@ -1,7 +1,9 @@
 <a href="{{ .Get "src" }}" 
    class="glightbox"
-   {{ if .Get "gallery"}}
-     data-gallery="{{ .Get "gallery" }}"
+   {{ with .Get "gallery" }}
+     data-gallery="{{ . }}"
+   {{ else }}
+     data-gallery="{{ .File.UniqueID }}"
    {{ end }}
    {{ if or (.Get "title") (.Get "description") }}
      data-glightbox="title:{{ .Get "title" | default "" }};description:{{ .Get "description" | default "" }}"
