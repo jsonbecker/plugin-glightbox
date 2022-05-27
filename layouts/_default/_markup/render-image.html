@@ -1,0 +1,13 @@
+<a href="{{ .Destination | safeURL }}" 
+   class="glightbox"
+   data-gallery="{{ .Page.File.UniqueID }}"
+   {{ with .Title }} title = {{ with .Title}} title="{{ . }}" {{ end }}
+>
+  <img src ="{{ .Destination | safeURL }}" 
+       style="border-radius: 5px; max-width: 100%"
+       alt="{{ .Text }}" 
+       {{ with .Title }}
+          title="{{ . }}"
+       {{ end }} 
+  />
+</a>
