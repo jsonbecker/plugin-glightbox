@@ -8,6 +8,11 @@ This plugin provides a [Hugo shortcode](https://gohugo.io/content-management/sho
 
 ## Usage
 
+### Markdown
+
+As of version 3.0, you can now use Markdown's native image syntax like `![Alt text](url_to_image.jpg "Title")` to have a single image use `glightbox`. This should increase compatibility with micro.blog since I believe markdown renders occur prior to shortcode expansion, improving compatiblity with both newsletters and the Photos page. It's also just convenient.
+
+### Shortcode for More flexibility
 Using shortcodes are easy. They have a special delimiter, but otherwise, look a lot like HTML. The simplest version of GLightbox works like this:
 
 ```html
