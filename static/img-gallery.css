@@ -4,3 +4,7 @@
   grid-gap: 10px;
   align-items: center;
 }
+
+.img-gallery > p {
+  margin-block:  0em;
+}
