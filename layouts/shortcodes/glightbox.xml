@@ -1,0 +1,17 @@
+<figure>
+<img src="{{ .Get "src" }}"
+     {{ if .Get "alt" }}
+        alt="{{ .Get "alt" }}" 
+     {{ end }}
+     {{ if .Get "title" }}
+        title={{ .Get "title" }} 
+     {{ end }} />
+{{ if or (.Get "title") (.Get "description") }}
+  <figcaption>
+  {{ if .Get "title" }}
+    <strong>{{ .Get "title" }} {{ if .Get "description" }} — {{end}}</strong>
+  {{ end }}
+  {{ .Get "description" | default "" }}
+  </figcaption>
+{{end}}
+</figure>
