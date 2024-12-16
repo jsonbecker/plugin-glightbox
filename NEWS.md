@@ -1,5 +1,9 @@
 # News
 
+## Version 3.0.4
+
+* Adds alternative rendering of galleries in RSS to ensure image descriptions are properly displayed. Gallery images are now rendered within a `<figure>` element, with the image title and description appearing within a `<figcaption>` element.
+
 ## Version 3.0.3
 
 * Adjusts image gallery CSS to reduce margins added by `<p>` tags from using the render hook.
