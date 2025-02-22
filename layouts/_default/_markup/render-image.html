@@ -4,6 +4,8 @@
    {{ with .Title }} title="{{ . }}" {{ end }}
 >
   <img src ="{{ .Destination | safeURL }}" 
+       loading="lazy"
+       decoding="async"
        style="border-radius: 5px; max-width: 100%"
        alt="{{ .Text }}" 
        {{ with .Title }}

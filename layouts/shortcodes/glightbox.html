@@ -10,6 +10,8 @@
    {{end}}
 >
 <img src = "{{ .Get "src" }}" style="border-radius: 5px; max-width: 100%"
+     loading="lazy"
+     decoding="async"
      {{ if .Get "alt" }}
         alt="{{ .Get "alt" }}" 
      {{ end }}
